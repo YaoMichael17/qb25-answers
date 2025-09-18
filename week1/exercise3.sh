@@ -39,15 +39,16 @@
 # head -n 1 repressed_in_both 
 # chr1	11537413	11538213	12_Repressed	0	.	11534013	11538613
 
-Describe the chromatin state across all nine conditions.
-NHLF chromatin state is mostly weakly transcribed , short weak promoter, short weak enhancer, short insulator, and a longer active promoter.
-NHEK chromatin state differs, starting with transcriptional elongation, mostly weakly transcribed regions, and lacking an insulator.
-K562 chromatin state is mostly weakly transcribed and in transcriptional transition, with both a weak and an active promoter.
-HUVEC chromatin state is mostly weakly transcribed, featuring a weak enhancer, a weak promoter, and an active promoter.
-HSMM chromatin state is mostly weakly transcribed, with transcriptional elongation, a weak promoter, a weak enhancer, and an active promoter.
-HMEC chromatin state is mostly weakly transcribed, with a weak promoter and an active promoter.
-HepG2 chromatin state includes two sections of weakly transcribed regions, three weak enhancers, one strong enhancer, one weak promoter, and one active promoter.
-H1-hESC chromatin state is mostly weakly transcribed, with a weak enhancer, a weak promoter, and an active promoter.
-GM12878 chromatin state starts with a strong enhancer, followed by a weak enhancer, a weakly transcribed region, four more weak enhancers, a weak promoter, and an active promoter.
+# Describe the chromatin state across all nine conditions.
+# NHLF chromatin state is mostly weakly transcribed , short weak promoter, short weak enhancer, short insulator, and a longer active promoter.
+# NHEK chromatin state differs, starting with transcriptional elongation, mostly weakly transcribed regions, and lacking an insulator.
+# K562 chromatin state is mostly weakly transcribed and in transcriptional transition, with both a weak and an active promoter.
+# HUVEC chromatin state is mostly weakly transcribed, featuring a weak enhancer, a weak promoter, and an active promoter.
+# HSMM chromatin state is mostly weakly transcribed, with transcriptional elongation, a weak promoter, a weak enhancer, and an active promoter.
+# HMEC chromatin state is mostly weakly transcribed, with a weak promoter and an active promoter.
+# HepG2 chromatin state includes two sections of weakly transcribed regions, three weak enhancers, one strong enhancer, one weak promoter, and one active promoter.
+# H1-hESC chromatin state is mostly weakly transcribed, with a weak enhancer, a weak promoter, and an active promoter.
+# GM12878 chromatin state starts with a strong enhancer, followed by a weak enhancer, a weakly transcribed region, four more weak enhancers, a weak promoter, and an active promoter.
+
 
 
