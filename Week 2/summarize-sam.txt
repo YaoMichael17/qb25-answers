@@ -1,0 +1,20 @@
+./summarize-sam.py
+* 1411
+chrI 2166
+chrII 12686
+chrIII 5190
+chrIV 24812
+chrIX 6021
+chrM 6889
+chrV 8625
+chrVI 3191
+chrVII 17687
+chrVIII 8465
+chrX 11588
+chrXI 10922
+chrXII 17421
+chrXIII 14938
+chrXIV 12161
+chrXV 17306
+chrXVI 15089
+1 1
