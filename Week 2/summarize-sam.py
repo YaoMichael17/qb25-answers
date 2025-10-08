@@ -8,7 +8,7 @@ mismatch = {}
 file=open("/Users/cmdb/qb25-answers/week2/variants/A01_01.sam")
 
 for i in file:
-    if "@" in i:
+    if i.startswith("@"):
         continue
     clean= i.strip("\n").split("\t")
     # print(clean)
@@ -22,21 +22,29 @@ for i in file:
     else:
         dictionary[chr] = 1
         
+    for mis in clean[11:]:
+        if mis.startswith("NM:i:"):
+            slice = int(mis[5:])
+            if slice in mismatch:
+                mismatch[slice] += 1
+            else:
+                mismatch[slice] = 1
+            break
+        
 for chr_c in sorted(dictionary):
     print(chr_c,dictionary[chr_c])
 
 
 
 
-for mis in clean[10:]:
+for mis in clean[11:]:
     if mis.startswith("NM:i:"):
         slice = int(mis[5:])
         if slice in mismatch:
             mismatch[slice] += 1
         else:
             mismatch[slice] = 1
-
-        break
+            break
         
 
 for ii in sorted(mismatch):
