@@ -1,8 +1,9 @@
 library(tidyverse)
 
-allele <- read.table("AF.txt", header = TRUE)
+allele <- read.table("/Users/cmdb/qb25-answers/week3/AF.txt", header = FALSE)
 
-print(head(allele))
+colnames(allele) <- c("AF")
+
 
 allele %>%
   ggplot(aes(x=AF)) +
@@ -18,7 +19,7 @@ allele %>%
 
 
 
-dp <- read.table("DP.txt", header = FALSE)
+dp <- read.table("/Users/cmdb/qb25-answers/week3/DP.txt", header = FALSE)
 colnames(dp) <- c("DP")
 
 dp$DP <- as.numeric(dp$DP)

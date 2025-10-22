@@ -5,19 +5,14 @@
 # I think that A01_24, A01_27, A01_62, and A01_63 are derived from the lab strain, as they share similar allele frequencies and have matching nucleotides. 
 # The other samples are likely from the wine strain, as they show more distinct genotypes and have many overlapping variant regions.
 
-# Question 3.2
 
-# I wasn't able to generate the gt_long.txt, however the figure should show me if DNA is inherited from one parent or another.
 
-# sample IDs (in order, corresponding to the VCF sample columns)
-
-file = open("/Users/cmdb/qb25-answers/week3/BYxRM_bam/biallelic.vcf")
+file=open("/Users/cmdb/qb25-answers/week3/BYxRM_bam/biallelic.vcf")
 
 output= open("/Users/cmdb/qb25-answers/week3/BYxRM_bam/gt_long.txt","w")
 sample_ids = ["A01_62", "A01_39", "A01_63", "A01_35", "A01_31",
               "A01_27", "A01_24", "A01_23", "A01_11", "A01_09"]
 
-vcf_file ="/Users/cmdb/qb25-answers/week3/BYxRM_bam/filtered.vcf"
 
 
 
@@ -26,7 +21,8 @@ vcf_file ="/Users/cmdb/qb25-answers/week3/BYxRM_bam/filtered.vcf"
 for line in file:
     if line.startswith("#"):
         continue
-        # split the line into fields by tab, then
+        # split the line into fields by tab, the
+    # print(line)
     fields = line.strip().split('\t')
     chrom = fields[0]
     pos   = fields[1]

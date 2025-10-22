@@ -15,7 +15,7 @@
 for i in bamListFile.txt:
 
 # run FreeBayes to discover variants
-freebayes -f sacCer3.fa -L bamListFile.txt --genotype-qualities -p 2 > unfiltered.vcf
+freebayes -f sacCer3.fa -L bamListFile.txt --genotype-qualities -p 1 > unfiltered.vcf
 
 # the resulting VCF file is unfiltered, meaning that it contains low-confidence calls and also has some quirky formatting, so the following steps use a software suite called vcflib to clean up the VCF
 
