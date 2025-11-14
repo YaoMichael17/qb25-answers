@@ -16,21 +16,22 @@ data_sd <- rowSds(data2)
 data_set <- order(data_sd, decreasing = TRUE)[1:500]
 top500 <- data2[data_set,]
 
-rownames(pca$x)
+#rownames(pca$x)
 
 
 #invert my matrix
 invert <- t(top500)
 
 
-#normalize data like livecoding
-scaled <- scale(invert)
 
 #to run PCA
-pca <- prcomp(scaled)
+pca <- prcomp(invert)
 
 #samples <- as.character(rownames(pca$x))
 
+
+#Switch the position of Fe and LFC.Fe by keeping the 1-9 and 16:21 column as they are but moving Fe column to column 10-12. ChatGPT helped with this problem.
+data <- data[, c(1:9, 13:15, 10:12, 16:21)]
 #Creating tibble
 samples_2 <- tibble(
   sample = rownames(pca$x),
@@ -68,7 +69,7 @@ ggplot(variance, aes(PC, norm_va))+
 
 
 
-
+colnames(data)
 combined = data[,seq(1, 21, 3)]
 combined = combined + data[,seq(2, 21, 3)]
 combined = combined + data[,seq(3, 21, 3)]
@@ -101,10 +102,15 @@ kmeans_1<- as.matrix(kmeans_1)
 heatmap(kmeans_1, Rowv=NA, Colv=NA, RowSideColors=RColorBrewer::brewer.pal(12,"Paired")[kmeans_2], ylab="Gene")
 
 
-
+cluster1<- rownames(kmeans_1)[kmeans_2==1]
+cluster11<- rownames(kmeans_1)[kmeans_2==11]
+cluster10<- rownames(kmeans_1)[kmeans_2==10]
 cluster5<- rownames(kmeans_1)[kmeans_2==5]
 cluster6<- rownames(kmeans_1)[kmeans_2==6]
 
+head(cluster11)
+head(cluster1)
+head(cluster10)
 head(cluster5)
 head(cluster6)
 
