@@ -5,4 +5,10 @@
 #Number of gaps in sequence2: 0
 
 #DNA alignment file
-#Waited for a long time on terminal and no output was seen. 
+
+#Alignment score: 18202.0
+#Number of gaps in sequence1: 46
+#Number of gaps in sequence2: 78
+
+
+
