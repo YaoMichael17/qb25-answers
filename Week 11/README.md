@@ -3,11 +3,11 @@
 
 1.4
 1. Around 25000 of this genome has not been sequenced.
-2. The Poisson expectation is P(0)= e^-3, which is around 49787 genome size, my number is around half of the Poisson expectations. The data does generate a normal distribution with the most frequency in the center(around 2-4 coverage)
+2. The Poisson expectation is P(0)= e^-3, which is around 49787 genome size, my number is around half of the Poisson expectations. The data also doesn't align well with the poisson and normal distribution lines.
 
 1.5
 1. There is 0 frequency of this genome that has not been sequenced.
-2. The Poisson expected number of uncovered positions is P(0) = e^-10, which is approximately 4.52 × 10^-5. This is very small and matches the histogram well. The Normal distribution fits better at higher coverage, forming a Gaussian-like curve centered around 10× coverage.
+2. The Poisson expected number of uncovered positions is P(0) = e^-10, which is approximately 4.52 × 10^-5. This is very small and matches the histogram well. However, the poisson and normal distribution line graphs are still a bit shifted to the right of the data set of 10x coverage.x.
 
 1.6
 1. There is 0 frequency of this genome that has not been sequenced.
